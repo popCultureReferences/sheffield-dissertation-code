@@ -1,0 +1,78 @@
+## START	
+# Request various outputs and specify some calculation details
+fullhf y
+optmodall y
+channels y
+outangle n
+outlegendre n
+fileelastic y
+recoil y
+# Specify the projectile-target system
+# "energies" file supplies the list of incident energies
+energy energy_grid_design
+projectile n
+element fe
+mass 56 
+Ltarget 0
+# Parameters below determine the "fineness" of the reaction
+isomer 1.e-7
+bins 40
+maxlevelstar 20
+maxlevelsres 20
+maxlevelsbin n 10
+segment 1
+transpower 5
+xseps 1.e-7
+popeps 1.e-3
+# Use a local OMP for the system rather than a global one
+# explicitly supress other options and set parameters to unadjusted
+localomp y
+# adjust these
+v1adjust n $v1adjust$
+v2adjust n $v2adjust$
+v3adjust n $v3adjust$
+v4adjust n $v4adjust$
+rvadjust n $rvadjust$ 
+avadjust n $avadjust$
+rwadjust n $rwadjust$
+awadjust n $awadjust$
+w1adjust n $w1adjust$
+w2adjust n $w2adjust$
+w3adjust n $w3adjust$
+w4adjust n $w4adjust$
+rvdadjust n $rvdadjust$ 
+avdadjust n $avdadjust$
+rwdadjust n $rwdadjust$
+awdadjust n $awdadjust$
+d1adjust n  $d1adjust$
+d2adjust n $d2adjust$
+d3adjust n $d3adjust$
+vso1adjust n $vso1adjust$ 
+vso2adjust n $vso2adjust$
+wso1adjust n $wso1adjust$ 
+wso2adjust n $wso2adjust$
+rvsoadjust n $rvsoadjust$
+avsoadjust n $avsoadjust$ 
+rwsoadjust n $rwsoadjust$
+awsoadjust n $awsoadjust$ 
+rcadjust n $rcadjust$
+# Use WFCs
+widthfluc y
+##
+racap n
+ldmodelracap 1
+# Ignore preequilibrium effects
+preequilibrium y
+preeqcomplex y
+twocomponent y
+# Select level density (and other) models(s)
+# (All this was crossed out)
+## END
+
+
+
+
+
+
+
+
